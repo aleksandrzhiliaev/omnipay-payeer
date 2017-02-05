@@ -1,0 +1,36 @@
+{
+    "name": "aleksandrzhiliaev/omnipay-payeer",
+    "type": "library",
+    "description": "Payeer gateway for Omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "payeer",
+        "purchase"
+    ],
+    "homepage": "http://sassoft.ru",
+    "license": "",
+    "authors": [
+        {
+            "name": "Aleksandr Zhiliaev",
+            "email": "sassoftinc@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Omnipay\\Payeer\\" : "src/" }
+    },
+    "require": {
+        "omnipay/common": "~2.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "~2.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}
