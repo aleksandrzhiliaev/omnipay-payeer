@@ -1,0 +1,7 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/json; Charset=utf-8
+Server: Microsoft-IIS/8.5
+Date: Tue, 06 Oct 2015 10:00:00 GMT
+
+{"errors": {}}

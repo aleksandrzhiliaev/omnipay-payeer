@@ -2,39 +2,8 @@
 
 namespace Omnipay\Payeer\Message;
 
-
 class PurchaseRequest extends AbstractRequest
 {
-    public function getAccount()
-    {
-        return $this->getParameter('account');
-    }
-
-    public function setAccount($value)
-    {
-        return $this->setParameter('account', $value);
-    }
-
-    public function getShopId()
-    {
-        return $this->getParameter('shop_id');
-    }
-
-    public function setShopId($value)
-    {
-        return $this->setParameter('shop_id', $value);
-    }
-
-    public function getShopSecret()
-    {
-        return $this->getParameter('shop_secret');
-    }
-
-    public function setShopSecret($value)
-    {
-        return $this->setParameter('shop_secret', $value);
-    }
-
     public function getData()
     {
         $this->validate('account', 'currency', 'amount', 'description');

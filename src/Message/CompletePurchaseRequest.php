@@ -6,16 +6,6 @@ use Omnipay\Common\Exception\InvalidResponseException;
 
 class CompletePurchaseRequest extends AbstractRequest
 {
-    public function getShopSecret()
-    {
-        return $this->getParameter('shop_secret');
-    }
-
-    public function setShopSecret($value)
-    {
-        return $this->setParameter('shop_secret', $value);
-    }
-
     public function getData()
     {
         if ($this->httpRequest->request->get('m_curr') != $this->getCurrency()) {
@@ -46,7 +36,7 @@ class CompletePurchaseRequest extends AbstractRequest
         }
 
         echo $this->httpRequest->request->get('m_orderid').'|success';
-        
+
         return $this->httpRequest->request->all();
     }
 
